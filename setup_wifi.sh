@@ -23,6 +23,10 @@ iface eth0 inet manual
 
 iface br0 inet static
 bridge_ports wlan0 eth0
+address 10.0.X.X
+network 10.0.X.X
+netmask 255.255.255.0
+broadcast 10.0.X.255
 EOL
 
 echo "Copying hostapd config..."
